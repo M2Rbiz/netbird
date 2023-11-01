@@ -1,0 +1,9 @@
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  Codespell:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: codespell-project/actions-codespell@v2
+      with:
+        only_warn: 1
